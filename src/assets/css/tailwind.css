@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container,
+.container-sm {
+  @apply w-full mx-auto transition-all;
+}
+
+@screen sm {
+  .container {
+    @apply w-135;
+  }
+  .container-sm {
+    @apply w-135;
+  }
+}
+
+@screen md {
+  .container {
+    width: 45rem;
+  }
+}
+
+@screen lg {
+  .container {
+    width: 60rem;
+  }
+}
+
+@screen xl {
+  .container {
+    width: 71.25rem;
+  }
+}
+
+@screen 2xl {
+  .container {
+    width: 82.5rem;
+  }
+}
