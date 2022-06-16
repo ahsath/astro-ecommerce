@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.container,
+.container {
+  @apply mx-auto;
+}
+
 .container-sm {
-  @apply w-full mx-auto transition-all;
+  @apply w-full transition-all;
 }
 
 @screen sm {
