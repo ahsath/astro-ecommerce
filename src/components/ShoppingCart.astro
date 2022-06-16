@@ -1,0 +1,6 @@
+---
+import bag from '../assets/svg/bag.svg?raw'
+const props = Astro.props
+---
+
+<button class={props.class} set:html={bag}></button>
