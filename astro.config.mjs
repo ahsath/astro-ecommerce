@@ -9,7 +9,7 @@ export default defineConfig({
     vue(),
     tailwind({ config: { applyBaseStyles: false } }),
     {
-      name: '@astrojs/tailwindcss',
+      name: 'tailwindcss',
       hooks: {
         'astro:config:setup': ({ injectScript }) => {
           injectScript('page-ssr', `import './src/assets/css/tailwind.css'`);
@@ -17,4 +17,5 @@ export default defineConfig({
       },
     },
   ],
+  experimental: { integrations: true }
 });
