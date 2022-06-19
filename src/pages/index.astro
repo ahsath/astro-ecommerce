@@ -1,16 +1,12 @@
 ---
 import Base from "../layouts/Base.astro";
-import img from '../assets/david-dvoracek-12P0_rzSNpM-unsplash.jpeg'
+import Collection from "../components/sections/Collection.astro";
+import Arrivals from "../components/sections/Arrivals.astro";
 ---
 
 <Base>
 <main class="grid gap-16 py-6">
-  <div class="container px-4">
-    <div>coleção</div>
+  <Collection />
+  <Arrivals />
 </main>
-  </div>
-  <div class="container mt-4 sm:px-4">
-    <img class="w-full max-h-[75vh] object-cover" src={img}>
-  </div>
-</div>
 </Base>
