@@ -1,0 +1,24 @@
+---
+import arrowRight from '../../assets/svg/arrow-right.svg?raw'
+
+const res = await fetch(import.meta.env.API_BASE_URL + '/collection')
+const data = await res.json()
+---
+
+<section class="container px-4">
+  <a class="grid gap-4" href={data.pathname}>
+    <div>
+      <div class="md:text-lg">coleção</div>
+      <div class="flex justify-between items-baseline">
+        <h1 class="text-2xl md:text-5xl uppercase">{data.name}</h1>
+        <div class="flex items-center gap-2 text-sm uppercase">
+          Explorar
+          <slot set:html={arrowRight} />
+        </div>
+      </div>
+    </div>
+    <div class="-mx-4 sm:-mx-8 xl:-mx-16">
+      <img class="w-full max-h-[75vh] object-cover" src={data.cover} alt={data.name}>
+    </div>
+  </a>
+</section>
