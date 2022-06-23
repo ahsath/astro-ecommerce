@@ -1,0 +1,26 @@
+[
+   {
+      "id": "winter",
+      "name": "Inverno",
+      "pathname": "/Coleções/Inverno",
+      "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655941393/lauranails%20-%20demo%20site%20photos/Inverno_sozbh1.jpg"
+   },
+   {
+      "id": "spring",
+      "name": "Primavera",
+      "pathname": "/Coleções/Primavera",
+      "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655941396/lauranails%20-%20demo%20site%20photos/Primavera_jlmqrk.jpg"
+   },
+   {
+      "id": "autumn",
+      "name": "Outono",
+      "pathname": "/Coleções/Outono",
+      "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655941394/lauranails%20-%20demo%20site%20photos/Outono.jpg"
+   },
+   {
+      "id": "summer",
+      "name": "Verão",
+      "pathname": "/Coleções/Verão",
+      "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655941391/lauranails%20-%20demo%20site%20photos/Vera%CC%83o_ejwfia.jpg"
+   }
+]
