@@ -1,8 +1,0 @@
-{
-"seasons": [{
-   "id": "winter",
-   "name": "Winter",
-   "pathname": "/colecoes/inverno",
-   "cover": "path/to/img.jpg"
-}]
-}
