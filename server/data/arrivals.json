@@ -2,9 +2,73 @@
   {
     "id": 1,
     "name": "Suéter Coral com Zíper e Painel Contrastante",
-    "price": 16,
+    "price": 40.41,
     "pathname": "/Suéter-Coral-com-Zíper-e-Painel-Contrastante",
     "slug": "Suetér-Coral-com-Zíper-e-Painel-Contrastante",
-    "cover": "path/to/img.jpg"
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655647089/lauranails%20-%20demo%20site%20photos/Sue%CC%81ter_Coral_com_Zi%CC%81per_e_Painel_Contrastante_unoyck.png",
+    "reference": "https://www.aboutyou.pt/p/o-neill/sweatshirt-7844543"
+  },
+  {
+    "id": 2,
+    "name": "Vestido de Verão",
+    "price": 54.90,
+    "pathname": "/Vestido-de-Verão",
+    "slug": "Vestido-de-Verão",
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655648817/lauranails%20-%20demo%20site%20photos/Vestido_de_Vera%CC%83o_ytiq8j.png",
+    "reference": "https://www.aboutyou.pt/p/gap/vestido-de-verao-7997386"
+  },
+  {
+    "id": 3,
+    "name": "Vestido Eloy",
+    "price": 22.74,
+    "pathname": "/Vestido-Eloy",
+    "slug": "Vestido-Eloy",
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655648976/lauranails%20-%20demo%20site%20photos/Vestido_Eloy_kz6abz.png",
+    "reference": "https://www.aboutyou.pt/p/about-you/vestido-eloy-8022480"
+  },
+  {
+    "id": 4,
+    "name": "Casaco meia-estação Kenya",
+    "price": 22.74,
+    "pathname": "/Casaco-meia-estação-Kenya",
+    "slug": "Casaco-meia-estação-Kenya",
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649178/lauranails%20-%20demo%20site%20photos/Casaco_meia-estac%CC%A7a%CC%83o_Kenya_lf9avt.png",
+    "reference": "https://www.aboutyou.pt/p/only/casaco-meia-estacao-kenya-5570586"
+  },
+  {
+    "id": 5,
+    "name": "Calças Gesa",
+    "price": 27.92,
+    "pathname": "/Calças-Gesa",
+    "slug": "Calças-Gesa",
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649313/lauranails%20-%20demo%20site%20photos/Calc%CC%A7as_Gesa_ocrxoz.png",
+    "reference": "https://www.aboutyou.pt/p/shyx/calcas-gesa-7394380"
+  },
+  {
+    "id": 6,
+    "name": "Mala de Tiracolo",
+    "price": 81.00,
+    "pathname": "/Mala-de-Tiracolo",
+    "slug": "Mala-de-Tiracolo",
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649464/lauranails%20-%20demo%20site%20photos/Mala_de_Tiracolo_kpyenb.png",
+    "reference": "https://www.aboutyou.pt/p/furla/malas-de-tiracolo-8031427"
+  },
+  {
+    "id": 7,
+    "name": "Mala de Ombro Calvin Klein",
+    "price": 52.90,
+    "pathname": "/Mala-de-Ombro-Calvin-Klein",
+    "slug": "Mala-de-Ombro-Calvin-Klein",
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649671/lauranails%20-%20demo%20site%20photos/Mala_de_Ombro_Calvin_Klein_kcwidu.png",
+    "reference": "https://www.aboutyou.pt/p/calvin-klein/mala-de-ombro-7825231"
+  },
+  {
+    "id": 8,
+    "name": "Chapéu MISSPAP",
+    "price": 17.91,
+    "pathname": "/Chapéu-MISSPAP",
+    "slug": "Chapéu-MISSPAP",
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655650026/lauranails%20-%20demo%20site%20photos/Chape%CC%81u_MISSPAP_riulwk.png",
+    "reference": "https://www.aboutyou.pt/p/misspap/chapeu-8325924"
   }
 ]
