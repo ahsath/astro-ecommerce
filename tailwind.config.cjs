@@ -21,6 +21,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Greycliff CF', ...defaultTheme.fontFamily.sans]
+      },
+      gridTemplateColumns: {
+        '4-product': 'repeat(4, minmax(13rem, 1fr))'
       }
     },
   },
