@@ -15,6 +15,10 @@ app.get('/arrivals', (req, res) => {
   res.json(require('./data/arrivals.json'))
 })
 
+app.get('/seasons', (req, res) => {
+  res.json(require('./data/seasons.json'))
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
