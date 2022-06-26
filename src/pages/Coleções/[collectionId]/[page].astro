@@ -1,0 +1,55 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Filters from "../../../components/Filters.astro";
+import ProductCard from "../../../components/ProductCard.astro";
+
+export async function getStaticPaths({ paginate }) {
+  const resArray = await Promise.all([
+    fetch(import.meta.env.API_BASE_URL + '/collections'),
+    fetch(import.meta.env.API_BASE_URL + '/products')
+  ])
+
+  const [collections, products] = await Promise.all(resArray.map(res => res.json()))
+
+  return collections.map(collection => {
+    const filteredProducts = products.filter(product => product.collections.includes(collection.id))
+
+    return paginate(filteredProducts, {
+      params: { collectionId: collection.name },
+      props: { title: collection.displayName },
+      pageSize: 32
+    })
+  })
+}
+
+const products = Astro.props.page.data
+
+---
+
+<Base>
+<div class="container px-4 py-4">
+  <div class="grid xl:grid-cols-product-listing">
+    <section class="relative">
+      <div class="xl:sticky top-16">
+        <Filters />
+      </div>
+    </section>
+    <main class="flex flex-col gap-4 sm:gap-6">
+      <header class="text-center">
+        <h2 class="text-xs uppercase tracking-widest">Coleçāo</h2>
+        <h1 class="text-xl tracking-widest uppercase font-bold sm:text-3xl mt-1">{Astro.props.title}</h1>
+      </header>
+      <div class="grid gap-x-1 gap-y-6 grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
+        {products.map(product =>
+        <ProductCard product={product} />)
+        }
+      </div>
+    </main>
+    <section class="relative hidden xl:block">
+      <div
+        class="xl:sticky top-16 w-[160px] h-[600px] mx-auto bg-neutral-50 text-neutral-400 flex items-center justify-center">
+        Ad</div>
+    </section>
+  </div>
+</div>
+</Base>
