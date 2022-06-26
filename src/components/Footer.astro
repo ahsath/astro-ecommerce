@@ -1,22 +1,23 @@
 ---
 import instagram from '../assets/svg/instagram.svg?raw'
-import locationPin from '../assets/svg/location-pin.svg?raw'
+import logo from '../assets/svg/lauranails-sm.svg?raw'
 ---
 
-<footer class="container px-4 pb-8 pt-28">
-  <div class="flex flex-col gap-8 items-center sm:flex-row sm:justify-between">
-    <div class="flex gap-2 text-sm">
-      <a class="flex items-center gap-2 border border-black px-4 py-2 hover:bg-black hover:text-white transition uppercase text-xs font-semibold tracking-wider"
-        href=".">
-        <slot set:html={instagram} />
-        @laurita_marcano
-      </a>
-      <a class="flex items-center gap-2 border border-black px-4 py-2 hover:bg-black hover:text-white transition uppercase text-xs font-semibold tracking-wider"
-        href=".">
-        <slot set:html={locationPin} />
-        Pingo Doce, Sintra
-      </a>
+<footer class:list={[Astro.props.class]}>
+  <hr class="border-t mb-10">
+  <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+    <div class="flex flex-col gap-4 items-center lg:items-start">
+      <a href="https://instagram.com" class="text-neutral-500 hover:text-black transition" set:html={instagram} />
+      <span class="text-xs text-neutral-500 tracking-wider text-center lg:text-left">Somos uma loja física, visite-nos
+        no Pingo Doce,
+        Portela de
+        Sintra. Portugal.</span>
     </div>
-    <span class="text-xs text-neutral-600">© 2022 Laura Nails</span>
+    <div class="flex flex-col gap-1 items-center self-end">
+      <slot set:html={logo} />
+      <span class="text-xs tracking-wider text-neutral-500">Copyright © {new Date().getFullYear()} Laura
+        Nails</span>
+    </div>
+    <div class="hidden" />
   </div>
 </footer>
