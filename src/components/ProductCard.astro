@@ -1,0 +1,9 @@
+<a href={Astro.props.product.pathname} class="flex gap-4 flex-col snap-center">
+  <div class="bg-neutral-50">
+    <img class="object-contain aspect-[4/5]" src={Astro.props.product.cover} alt="">
+  </div>
+  <div class="flex flex-col text-center">
+    <h3 class="text-xs uppercase tracking-widest">{Astro.props.product.name}</h3>
+    <span class="text-sm font-semibold mt-2">€ {Astro.props.product.price}</span>
+  </div>
+</a>
