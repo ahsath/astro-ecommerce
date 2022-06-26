@@ -17,7 +17,8 @@
     "id": "Verão",
     "name": "Verão",
     "displayName": "Verão",
-    "pathname": "/Coleções/Verão/1"
+    "pathname": "/Coleções/Verão/1",
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655594773/collection-cover-img2.jpg"
   },
   {
     "id": "Outono",
