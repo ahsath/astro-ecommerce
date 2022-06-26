@@ -1,30 +1,23 @@
 ---
 import arrowRight from '../../assets/svg/arrow-right.svg?raw'
+import ProductCard from '../ProductCard.astro';
 
-const res = await fetch(import.meta.env.API_BASE_URL + '/arrivals')
-const data = await res.json()
+const res = await fetch(import.meta.env.API_BASE_URL + '/products')
+const products = await res.json()
 ---
 
 <section class="container grid gap-4 sm:gap-8">
   <a href="/Novas-Chegadas" class="flex justify-between items-baseline px-4">
-    <h2 class="text-2xl md:text-3xl uppercase">Novas Chegadas</h2>
-    <div class="flex items-center gap-2 text-sm uppercase">
+    <h2 class="text-2xl md:text-3xl tracking-wide uppercase">Novas Chegadas</h2>
+    <div class="flex items-center gap-2 text-sm tracking-widest uppercase">
       Mostre tudo
       <slot set:html={arrowRight} />
     </div>
   </a>
 
   <div class="grid grid-cols-4-product gap-x-1 gap-y-8 overflow-x-scroll snap-x scroll-pl-4 px-4 sm:px-0 sm:mx-4">
-    {data.map(product =>
-    <a href={product.pathname} class="flex gap-4 flex-col snap-center">
-      <div class="bg-neutral-50">
-        <img class="object-contain aspect-[4/5]" src={product.cover} alt="">
-      </div>
-      <div class="flex flex-col">
-        <span class="text-sm font-semibold">€ {product.price}</span>
-        <h3 class="text-sm">{product.name}</h3>
-      </div>
-    </a>
-    )}
+    {products.map(product =>
+    <ProductCard product={product} />)
+    }
   </div>
 </section>

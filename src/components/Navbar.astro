@@ -1,10 +1,10 @@
 ---
-const res = await fetch(import.meta.env.API_BASE_URL + '/navbar')
+const res = await fetch(import.meta.env.API_BASE_URL + '/categories')
 const data = await res.json()
 ---
 
 <nav class="h-12">
-  <div class="flex gap-4 items-center justify-between uppercase h-full">
-    {data.navbar.map(item => <a href={item.pathname}>{item.name}</a>)}
+  <div class="flex gap-4 items-center justify-between text-sm uppercase tracking-widest h-full">
+    {data.map(item => <a href={item.pathname}>{item.name}</a>)}
   </div>
 </nav>
