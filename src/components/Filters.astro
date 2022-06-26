@@ -1,0 +1,24 @@
+---
+const res = await fetch(import.meta.env.API_BASE_URL + '/filters')
+const data = await res.json()
+---
+
+<details open>
+  <summary class="font-semibold xl:list-none">Filtros</summary>
+  {data.map(filter => {
+  return (
+  <ul class="mt-4">
+    <li class="font-semibold">{filter.name}</li>
+    <ul class="pl-4">
+      {filter.by.map(({name, pathname}) => {
+      return (
+      <li class="flex items-center h-8">
+        <a href={pathname} class="uppercase text-sm tracking-widest">{name}</a>
+      </li>
+      )
+      })}
+    </ul>
+  </ul>
+  )
+  })}
+</details>
