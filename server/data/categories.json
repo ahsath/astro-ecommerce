@@ -1,22 +1,20 @@
-{
-  "navbar": [{
+[{
     "id": "vestidos",
     "name": "Vestidos",
-    "pathname": "/vestidos"
+    "pathname": "/Vestidos/1"
  },
  {
     "id": "calcas",
     "name": "Calças",
-    "pathname": "/calcas"
+    "pathname": "/Calças/1"
  },
  {
     "id": "chapeus",
     "name": "Chapéus",
-    "pathname": "/chapeus"
+    "pathname": "/Chapéus/1"
  },
  {
     "id": "acessorios",
     "name": "Acessórios",
-    "pathname": "/acessorios"
- }]
-}
+    "pathname": "/Acessórios/1"
+}]
