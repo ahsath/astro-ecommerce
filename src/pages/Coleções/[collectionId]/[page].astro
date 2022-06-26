@@ -2,6 +2,9 @@
 import Base from "../../../layouts/Base.astro";
 import Filters from "../../../components/Filters.astro";
 import ProductCard from "../../../components/ProductCard.astro";
+import NextPageLink from "../../../components/NextPageLink.astro";
+import PrevPageLink from "../../../components/PrevPageLink.astro";
+
 
 export async function getStaticPaths({ paginate }) {
   const resArray = await Promise.all([
@@ -23,7 +26,7 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const products = Astro.props.page.data
-
+const page = Astro.props.page
 ---
 
 <Base>
@@ -43,6 +46,26 @@ const products = Astro.props.page.data
         {products.map(product =>
         <ProductCard product={product} />)
         }
+      </div>
+      <div class="grid grid-cols-3 mt-16">
+        <div class="mr-auto">
+          {page.url.prev &&
+          <PrevPageLink to={page.url.prev}>
+            Anterior
+          </PrevPageLink>
+          }
+        </div>
+        <div class="text-xs text-neutral-500 uppercase tracking-widest self-center justify-self-center w-max">
+          Mostrando {page.currentPage}-{page.lastPage} de {page.total}
+        </div>
+        <div class="ml-auto">
+          {
+          page.url.next &&
+          <NextPageLink to={page.url.next}>
+            Próxima
+          </NextPageLink>
+          }
+        </div>
       </div>
     </main>
     <section class="relative hidden xl:block">
