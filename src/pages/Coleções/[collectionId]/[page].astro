@@ -37,38 +37,40 @@ const page = Astro.props.page
         <Filters />
       </div>
     </section>
-    <main class="flex flex-col gap-4 sm:gap-6">
-      <header class="text-center">
-        <h2 class="text-xs uppercase tracking-widest">Coleçāo</h2>
-        <h1 class="text-xl tracking-widest uppercase font-bold sm:text-3xl mt-1">{Astro.props.title}</h1>
-      </header>
-      <div class="grid gap-x-1 gap-y-6 grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
-        {products.map(product =>
-        <ProductCard product={product} />)
-        }
-      </div>
-      <div class="grid grid-cols-3 mt-16">
-        <div class="mr-auto">
-          {page.url.prev &&
-          <PrevPageLink to={page.url.prev}>
-            Anterior
-          </PrevPageLink>
+    <div>
+      <main class="flex flex-col gap-4 sm:gap-6">
+        <header class="text-center">
+          <h2 class="text-xs uppercase tracking-widest">Coleçāo</h2>
+          <h1 class="text-xl tracking-widest uppercase font-bold sm:text-3xl mt-1">{Astro.props.title}</h1>
+        </header>
+        <div class="grid gap-x-1 gap-y-6 grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
+          {products.map(product =>
+          <ProductCard product={product} />)
           }
         </div>
-        <div class="text-xs text-neutral-500 uppercase tracking-widest self-center justify-self-center w-max">
-          Mostrando {page.currentPage}-{page.lastPage} de {page.total}
+        <div class="grid grid-cols-3 mt-16">
+          <div class="mr-auto">
+            {page.url.prev &&
+            <PrevPageLink to={page.url.prev}>
+              Anterior
+            </PrevPageLink>
+            }
+          </div>
+          <div class="text-xs text-neutral-500 uppercase tracking-widest self-center justify-self-center w-max">
+            Mostrando {page.currentPage}-{page.lastPage} de {page.total}
+          </div>
+          <div class="ml-auto">
+            {
+            page.url.next &&
+            <NextPageLink to={page.url.next}>
+              Próxima
+            </NextPageLink>
+            }
+          </div>
         </div>
-        <div class="ml-auto">
-          {
-          page.url.next &&
-          <NextPageLink to={page.url.next}>
-            Próxima
-          </NextPageLink>
-          }
-        </div>
-      </div>
-      <Footer />
-    </main>
+      </main>
+      <Footer class="pt-4" />
+    </div>
     <section class="relative hidden xl:block">
       <div
         class="xl:sticky top-16 w-[160px] h-[600px] mx-auto bg-neutral-50 text-neutral-400 flex items-center justify-center">
