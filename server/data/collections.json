@@ -1,0 +1,28 @@
+[
+  {
+    "id": "Primavera",
+    "name": "Primavera",
+    "displayName": "Primavera - Verão 22",
+    "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655594773/collection-cover-img2.jpg",
+    "alt": "",
+    "pathname": "/Coleções/Primavera/1"
+  },
+  {
+    "id": "Inverno",
+    "name": "Inverno",
+    "displayName": "Inverno",
+    "pathname": "/Coleções/Inverno/1"
+  },
+  {
+    "id": "Verão",
+    "name": "Verão",
+    "displayName": "Verão",
+    "pathname": "/Coleções/Verão/1"
+  },
+  {
+    "id": "Outono",
+    "name": "Outono",
+    "displayName": "Outono",
+    "pathname": "/Coleções/Outono/1"
+  }
+]
