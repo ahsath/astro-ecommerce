@@ -8,7 +8,7 @@
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655647089/lauranails%20-%20demo%20site%20photos/Sue%CC%81ter_Coral_com_Zi%CC%81per_e_Painel_Contrastante_unoyck.png",
     "reference": "https://www.aboutyou.pt/p/o-neill/sweatshirt-7844543",
     "categories": ["Suéters"],
-    "collections": ["Inverno", "Primavera", "Verão"]
+    "collections": ["Inverno", "Primavera", "Verao"]
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655648817/lauranails%20-%20demo%20site%20photos/Vestido_de_Vera%CC%83o_ytiq8j.png",
     "reference": "https://www.aboutyou.pt/p/gap/vestido-de-verao-7997386",
     "categories": ["Vestidos"],
-    "collections": ["Verão"]
+    "collections": ["Verao"]
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655648976/lauranails%20-%20demo%20site%20photos/Vestido_Eloy_kz6abz.png",
     "reference": "https://www.aboutyou.pt/p/about-you/vestido-eloy-8022480",
     "categories": ["Vestidos"],
-    "collections": ["Verão"]
+    "collections": ["Verao"]
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649178/lauranails%20-%20demo%20site%20photos/Casaco_meia-estac%CC%A7a%CC%83o_Kenya_lf9avt.png",
     "reference": "https://www.aboutyou.pt/p/only/casaco-meia-estacao-kenya-5570586",
     "categories": ["Casacos"],
-    "collections": ["Inverno", "Primavera", "Verão", "Outono"]
+    "collections": ["Inverno", "Primavera", "Verao", "Outono"]
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649313/lauranails%20-%20demo%20site%20photos/Calc%CC%A7as_Gesa_ocrxoz.png",
     "reference": "https://www.aboutyou.pt/p/shyx/calcas-gesa-7394380",
     "categories": ["Calças"],
-    "collections": ["Inverno", "Primavera", "Verão", "Outono"]
+    "collections": ["Inverno", "Primavera", "Verao", "Outono"]
   },
   {
     "id": 6,
@@ -85,6 +85,6 @@
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655650026/lauranails%20-%20demo%20site%20photos/Chape%CC%81u_MISSPAP_riulwk.png",
     "reference": "https://www.aboutyou.pt/p/misspap/chapeu-8325924",
     "categories": ["Chapéu"],
-    "collections": ["Verão", "Primavera", "Outono"]
+    "collections": ["Verao", "Primavera", "Outono"]
   }
 ]
