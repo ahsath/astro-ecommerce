@@ -4,7 +4,7 @@ import Filters from "../../../components/Filters.astro";
 import ProductCard from "../../../components/ProductCard.astro";
 import NextPageLink from "../../../components/NextPageLink.astro";
 import PrevPageLink from "../../../components/PrevPageLink.astro";
-
+import Footer from "../../../components/Footer.astro";
 
 export async function getStaticPaths({ paginate }) {
   const resArray = await Promise.all([
@@ -67,6 +67,7 @@ const page = Astro.props.page
           }
         </div>
       </div>
+      <Footer />
     </main>
     <section class="relative hidden xl:block">
       <div
