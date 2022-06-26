@@ -1,0 +1,10 @@
+---
+import arrowLeft from '../assets/svg/arrow-left.svg?raw'
+---
+
+<a class="next-prev-page-link left-0" href={Astro.props.to}>
+  <span set:html={arrowLeft} />
+  <span class="next-prev-page-link_text">
+    <slot />
+  </span>
+</a>
