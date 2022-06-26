@@ -10,6 +10,28 @@
   @apply w-full transition-all;
 }
 
+.next-prev-page-link {
+  @apply 
+    flex
+    items-center 
+    justify-center 
+    backdrop-blur-lg 
+    border 
+    bg-white/60 
+    gap-3 
+    fixed 
+    bottom-0 
+    w-12 
+    h-12
+    sm:static
+    sm:w-auto
+    sm:px-3
+}
+
+.next-prev-page-link_text {
+  @apply hidden sm:inline
+}
+
 @screen sm {
   .container {
     @apply w-135;
