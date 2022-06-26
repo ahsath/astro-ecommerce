@@ -24,7 +24,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         '4-product': 'repeat(4, minmax(13rem, 1fr))',
-        'product-listing': 'minmax(auto, 16rem) 1fr minmax(auto, 16rem)'
+        'product-listing': 'minmax(auto, 12.5rem) 1fr minmax(auto, 12.5rem)'
       }
     },
   },
