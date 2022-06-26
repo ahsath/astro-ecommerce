@@ -1,7 +1,7 @@
 ---
 import SeasonsLink from "./SeasonsLink.astro";
 
-const res = await fetch(import.meta.env.API_BASE_URL + '/seasons')
+const res = await fetch(import.meta.env.PUBLIC_API_BASE_URL + '/seasons')
 const data = await res.json()
 ---
 
