@@ -12,7 +12,7 @@ export default defineConfig({
       name: 'tailwindcss',
       hooks: {
         'astro:config:setup': ({ injectScript }) => {
-          injectScript('page-ssr', `import './src/assets/css/tailwind.css'`);
+          injectScript('page-ssr', `import '/src/assets/css/tailwind.css'`);
         },
       },
     },
