@@ -7,8 +7,14 @@
     "slug": "Suetér-Coral-com-Zíper-e-Painel-Contrastante",
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655647089/lauranails%20-%20demo%20site%20photos/Sue%CC%81ter_Coral_com_Zi%CC%81per_e_Painel_Contrastante_unoyck.png",
     "reference": "https://www.aboutyou.pt/p/o-neill/sweatshirt-7844543",
-    "categories": ["Suéters"],
-    "collections": ["Inverno", "Primavera", "Verao"]
+    "categories": [
+      "Suéters"
+    ],
+    "tags": [
+      "Inverno",
+      "Primavera",
+      "Verao"
+    ]
   },
   {
     "id": 2,
@@ -18,8 +24,12 @@
     "slug": "Vestido-de-Verão",
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655648817/lauranails%20-%20demo%20site%20photos/Vestido_de_Vera%CC%83o_ytiq8j.png",
     "reference": "https://www.aboutyou.pt/p/gap/vestido-de-verao-7997386",
-    "categories": ["Vestidos"],
-    "collections": ["Verao"]
+    "categories": [
+      "Vestidos"
+    ],
+    "tags": [
+      "Verao"
+    ]
   },
   {
     "id": 3,
@@ -29,8 +39,12 @@
     "slug": "Vestido-Eloy",
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655648976/lauranails%20-%20demo%20site%20photos/Vestido_Eloy_kz6abz.png",
     "reference": "https://www.aboutyou.pt/p/about-you/vestido-eloy-8022480",
-    "categories": ["Vestidos"],
-    "collections": ["Verao"]
+    "categories": [
+      "Vestidos"
+    ],
+    "tags": [
+      "Verao"
+    ]
   },
   {
     "id": 4,
@@ -40,8 +54,15 @@
     "slug": "Casaco-meia-estação-Kenya",
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649178/lauranails%20-%20demo%20site%20photos/Casaco_meia-estac%CC%A7a%CC%83o_Kenya_lf9avt.png",
     "reference": "https://www.aboutyou.pt/p/only/casaco-meia-estacao-kenya-5570586",
-    "categories": ["Casacos"],
-    "collections": ["Inverno", "Primavera", "Verao", "Outono"]
+    "categories": [
+      "Casacos"
+    ],
+    "tags": [
+      "Inverno",
+      "Primavera",
+      "Verao",
+      "Outono"
+    ]
   },
   {
     "id": 5,
@@ -51,8 +72,15 @@
     "slug": "Calças-Gesa",
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649313/lauranails%20-%20demo%20site%20photos/Calc%CC%A7as_Gesa_ocrxoz.png",
     "reference": "https://www.aboutyou.pt/p/shyx/calcas-gesa-7394380",
-    "categories": ["Calças"],
-    "collections": ["Inverno", "Primavera", "Verao", "Outono"]
+    "categories": [
+      "Calças"
+    ],
+    "tags": [
+      "Inverno",
+      "Primavera",
+      "Verao",
+      "Outono"
+    ]
   },
   {
     "id": 6,
@@ -62,8 +90,10 @@
     "slug": "Mala-de-Tiracolo",
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649464/lauranails%20-%20demo%20site%20photos/Mala_de_Tiracolo_kpyenb.png",
     "reference": "https://www.aboutyou.pt/p/furla/malas-de-tiracolo-8031427",
-    "categories": ["Malas"],
-    "collections": []
+    "categories": [
+      "Malas"
+    ],
+    "tags": []
   },
   {
     "id": 7,
@@ -73,8 +103,10 @@
     "slug": "Mala-de-Ombro-Calvin-Klein",
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655649671/lauranails%20-%20demo%20site%20photos/Mala_de_Ombro_Calvin_Klein_kcwidu.png",
     "reference": "https://www.aboutyou.pt/p/calvin-klein/mala-de-ombro-7825231",
-    "categories": ["Malas"],
-    "collections": []
+    "categories": [
+      "Malas"
+    ],
+    "tags": []
   },
   {
     "id": 8,
@@ -84,7 +116,13 @@
     "slug": "Chapéu-MISSPAP",
     "cover": "https://res.cloudinary.com/dubxsmwco/image/upload/v1655650026/lauranails%20-%20demo%20site%20photos/Chape%CC%81u_MISSPAP_riulwk.png",
     "reference": "https://www.aboutyou.pt/p/misspap/chapeu-8325924",
-    "categories": ["Chapéu"],
-    "collections": ["Verao", "Primavera", "Outono"]
+    "categories": [
+      "Chapéu"
+    ],
+    "tags": [
+      "Verao",
+      "Primavera",
+      "Outono"
+    ]
   }
 ]
