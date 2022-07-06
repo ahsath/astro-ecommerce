@@ -1,20 +1,22 @@
-[{
-    "id": "vestidos",
-    "name": "Vestidos",
-    "pathname": "/Vestidos/1"
- },
- {
-    "id": "calcas",
-    "name": "Calças",
-    "pathname": "/Calças/1"
- },
- {
-    "id": "chapeus",
-    "name": "Chapéus",
-    "pathname": "/Chapéus/1"
- },
- {
-    "id": "acessorios",
-    "name": "Acessórios",
-    "pathname": "/Acessórios/1"
-}]
+[
+   {
+      "id": "vestidos",
+      "name": "Vestidos",
+      "pathname": "/Vestidos/1"
+   },
+   {
+      "id": "calcas",
+      "name": "Calças",
+      "pathname": "/Calcas/1"
+   },
+   {
+      "id": "chapeus",
+      "name": "Chapéus",
+      "pathname": "/Chapeus/1"
+   },
+   {
+      "id": "acessorios",
+      "name": "Acessórios",
+      "pathname": "/Acessorios/1"
+   }
+]
