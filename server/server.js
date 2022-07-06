@@ -4,20 +4,21 @@ const app = express()
 const port = 8000
 
 const categories = require('./data/categories.json')
-const collections = require('./data/collections.json')
+const tags = require('./data/tags.json')
 
 app.get('/categories', (req, res) => {
   res.json(categories)
 })
 
-app.get('/collections', (req, res) => {
-  res.json(collections)
+app.get('/tags', (req, res) => {
+  res.json(tags)
 })
 
-app.get('/collections/:collectionId', (req, res) => {
-  const collectionId = req.params.collectionId
-  const collection = collections.find(collection => collection.id === collectionId)
-  res.json(collection)
+app.get('/tags/:tagName', (req, res) => {
+  const tagName = req.params.tagName
+  const tag = tags.find(tag => tag.name === tagName)
+
+  res.json(tag)
 })
 
 app.get('/products', (req, res) => {
@@ -25,6 +26,7 @@ app.get('/products', (req, res) => {
 })
 
 app.get('/seasons', (req, res) => {
+  const seasons = ['winter', 'spring', 'autumn', 'summer']
   res.json(require('./data/seasons.json'))
 })
 
@@ -32,7 +34,7 @@ app.get('/filters', (req, res) => {
   const filters = [
     { id: 'Todu', name: '', by: [{ name: 'Mostre Todu', pathname: '/Todu/1' }] },
     { id: 'Categorias', name: 'Categorias', by: categories },
-    { id: 'Coleçāo', name: 'Coleçāo', by: collections }
+    { id: 'Coleçāo', name: 'Coleçāo', by: tags }
   ]
   res.json(filters)
 })
