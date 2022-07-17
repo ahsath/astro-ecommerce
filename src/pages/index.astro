@@ -4,6 +4,10 @@ import Collection from "../components/sections/Collection.astro";
 import Arrivals from "../components/sections/Arrivals.astro";
 import Seasons from "../components/sections/seasons/Seasons.astro";
 import Footer from "../components/Footer.astro";
+
+import Airtable from "airtable";
+
+Airtable.configure({ apiKey: import.meta.env.AIRTABLE_API_KEY });
 ---
 
 <Base>
