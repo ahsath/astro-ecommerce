@@ -1,23 +1,15 @@
 ---
 import lauranails from '../assets/svg/lauranails.svg?raw'
 import ShoppingCart from './ShoppingCart.astro';
+import Menu from './Menu.astro';
 import Navbar from './Navbar.astro';
 ---
 
-<header class="sticky top-0 border-b backdrop-blur-lg bg-white/60 z-50">
-  <div class="grid lg:grid-cols-3 container px-4">
-    <div class="grid grid-cols-3 h-12">
-      <div></div>
-      <div class="flex justify-center items-center lg:col-span-full lg:justify-start">
-        <a href="/" set:html={lauranails} />
-      </div>
-      <div class="flex justify-end items-center">
-        <ShoppingCart class="lg:hidden" />
-      </div>
-    </div>
+<header class="sticky top-0 border-b backdrop-blur-lg bg-white/60 z-40">
+  <div class="grid grid-cols-[repeat(3,1fr)] lg h-12 px-4 container">
+    <Menu />
+    <a class="justify-self-center self-center lg:col-span-1 lg:mr-auto" href="/" set:html={lauranails} />
     <Navbar />
-    <div class="flex justify-end items-center">
-      <ShoppingCart class="hidden lg:inline-block" />
-    </div>
+    <ShoppingCart class="ml-auto" />
   </div>
 </header>
