@@ -1,10 +1,17 @@
 ---
-const res = await fetch(import.meta.env.PUBLIC_API_BASE_URL + '/categories')
-const data = await res.json()
+import airtable from 'airtable'
+
+const base = airtable.base(import.meta.env.AIRTABLE_BASE_ID)
+
+const mainMenu = await base('main_menu').select().all()
 ---
 
-<nav class="h-12">
-  <div class="flex gap-4 items-center justify-between text-sm uppercase tracking-widest h-full">
-    {data.map(item => <a href={item.pathname}>{item.name}</a>)}
+<nav
+  class="translate-x-[-100%] peer-checked:translate-x-0 transition fixed left-0 h-screen z-50 bg-white min-w-[20rem] lg:h-12 lg:static lg:!block lg:!translate-x-0 lg:!min-w-[auto] lg:bg-transparent">
+
+  <div
+    class="flex flex-col lg:flex-row lg:gap-4 lg:items-center lg:justify-between text-sm uppercase tracking-widest h-full px-4 py-2">
+    {mainMenu.map(menu => <a href={menu.fields.pathname}
+      class="flex items-center h-12 min-w-max">{menu.fields.name}</a>)}
   </div>
 </nav>
