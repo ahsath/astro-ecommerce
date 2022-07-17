@@ -1,0 +1,7 @@
+---
+import menu from '../assets/svg/menu.svg?raw'
+---
+
+<label class="flex items-center mr-auto lg:hidden cursor-pointer" for="menu" set:html={menu} />
+<input id="menu" type="checkbox" class="sr-only invisible peer">
+<label for="menu" class="fixed inset-x-0 hidden h-screen peer-checked:bg-black/60 peer-checked:block" />
